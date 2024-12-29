@@ -4,33 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="301cb573-7faa-4be3-bc75-6a6502572cfe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/core/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/core/PeerConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/crypto/QuantumResistantCrypto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/network/ConnectionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/network/DataManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/network/MessageAssembler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/network/MessageHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/network/MessageTracker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/network/PeerDiscoveryManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/network/RoutingManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/network/protocol/DataMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/network/protocol/HandshakeMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/network/protocol/HandshakeProtocol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/network/protocol/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/network/protocol/PeerDiscoveryMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/network/protocol/RoutingMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/util/CryptoUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/util/SerializationUtil.java" afterDir="false" />
+    <list default="true" id="301cb573-7faa-4be3-bc75-6a6502572cfe" name="Changes" comment="First commit before modifying RoutingManager and integrating it with the Node class">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/monitoring/MonitoringTestSuite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/monitoring/NetworkEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/monitoring/NetworkMetrics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/monitoring/NetworkMetricsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/monitoring/NetworkMonitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/monitoring/NetworkStats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/monitoring/PeerHealth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/nexuscipher/labyrinth/monitoring/NetworkMonitorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/network/RoutingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/network/RoutingManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/network/protocol/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/network/protocol/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/network/protocol/RoutingMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nexuscipher/labyrinth/network/protocol/RoutingMessage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,13 +43,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nexuscipher.labyrinth.Main" />
@@ -92,6 +80,14 @@
       <option name="presentableId" value="Default" />
       <updated>1734630412642</updated>
     </task>
+    <task id="LOCAL-00001" summary="First commit before modifying RoutingManager and integrating it with the Node class">
+      <created>1735494177473</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1735494177473</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -104,5 +100,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit before modifying RoutingManager and integrating it with the Node class" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit before modifying RoutingManager and integrating it with the Node class" />
   </component>
 </project>

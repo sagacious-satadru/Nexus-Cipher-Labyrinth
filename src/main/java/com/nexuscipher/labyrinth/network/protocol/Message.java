@@ -10,10 +10,16 @@ public abstract class Message implements Serializable {
     private final long timestamp;
 
     public enum MessageType {
+        // Core message types
+        DATA,           // Regular data payload messages
+        ROUTING,        // Network routing control messages
+
+        // Handshake protocol messages
         HANDSHAKE_INIT,
         HANDSHAKE_RESPONSE,
         HANDSHAKE_CONFIRM,
-        DATA,
+
+        // Network discovery messages
         PEER_DISCOVERY,
         PEER_LIST
     }
