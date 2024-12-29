@@ -1,6 +1,3 @@
-Here is the organized `README.md`:
-
-```markdown
 # Nexus Cipher Labyrinth 🌐
 ## A Quantum-Resistant Peer-to-Peer Encryption Mesh Network
 
@@ -191,4 +188,3 @@ Special thanks to the quantum cryptography research community and the open-sourc
 ---
 
 *This project represents a significant advancement in secure, distributed communications, combining cutting-edge cryptographic techniques with robust networking principles. It stands as a testament to forward-thinking software engineering and security-conscious design.*
-```
