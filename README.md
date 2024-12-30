@@ -171,7 +171,7 @@ The system demonstrates impressive performance metrics:
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please read our contribution guidelines and code of conduct.
+Contributions are welcome! 😎❣️
 
 ---
 
